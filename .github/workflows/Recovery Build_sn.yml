@@ -1,4 +1,4 @@
-name: Recovery Build(Snowwolf725)
+name: Recovery Build_PBRP
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/snowwolf725/device_oneplus_waffle-TWRP'
+        default: 'https://github.com/morannlx/device_oneplus_waffle-TWRP'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -22,23 +22,23 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/oneplus/waffle'
+        default: 'device/realme/divo'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-        default: 'https://github.com/snowwolf725/device_oneplus_sm86xx-common-TWRP'
+        default: 'https://github.com/morannlx/device_oneplus_sm86xx-common-TWRP'
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
-        default: 'device/oneplus/sm86xx-common'
+        default: 'device/realme/sm86xx-common'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'waffle'
+        default: 'divo'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_waffle'
+        default: 'twrp_divo'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
